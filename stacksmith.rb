@@ -11,24 +11,24 @@ class Stacksmith < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/mubbie/stacksmith/releases/download/v1.0.0/stacksmith_1.0.0_darwin_amd64.tar.gz"
-      sha256 "5b6aa5d1780f0a30c529fccdcc283f616ce58b5b26f4ff3231ad9e9e894570e0"
+      sha256 "21aedb8f15ce53bdc3577401c3a2e07d9556bf624b369553d58a6ebf92b1728b"
 
       def install
         bin.install "stacksmith"
-        bash_completion.install "completions/stacksmith.bash"
-        zsh_completion.install "completions/stacksmith.zsh"
-        fish_completion.install "completions/stacksmith.fish"
+        bash_completion.install "build/completions/stacksmith.bash"
+        zsh_completion.install "build/completions/stacksmith.zsh"
+        fish_completion.install "build/completions/stacksmith.fish"
       end
     end
     if Hardware::CPU.arm?
       url "https://github.com/mubbie/stacksmith/releases/download/v1.0.0/stacksmith_1.0.0_darwin_arm64.tar.gz"
-      sha256 "b0dcccdaccf375f47820bc2e90dad0387207c596b3b10dc91f8077f548f7fad4"
+      sha256 "cd6e3346f33f172e52f2d6d87627e95e8984bd8de613e74c2853a4d1c2cf3fe1"
 
       def install
         bin.install "stacksmith"
-        bash_completion.install "completions/stacksmith.bash"
-        zsh_completion.install "completions/stacksmith.zsh"
-        fish_completion.install "completions/stacksmith.fish"
+        bash_completion.install "build/completions/stacksmith.bash"
+        zsh_completion.install "build/completions/stacksmith.zsh"
+        fish_completion.install "build/completions/stacksmith.fish"
       end
     end
   end
@@ -37,26 +37,26 @@ class Stacksmith < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/mubbie/stacksmith/releases/download/v1.0.0/stacksmith_1.0.0_linux_amd64.tar.gz"
-        sha256 "9287970a6d8dc1c1c7f37471c5dc7797fb376c35d7f739dd84d289e7148bcd2d"
+        sha256 "03bfdbec00720b1cfca4bf05db901fe09246f89f2e3bbaa2890f0fb19e21436b"
 
         def install
           bin.install "stacksmith"
-          bash_completion.install "completions/stacksmith.bash"
-          zsh_completion.install "completions/stacksmith.zsh"
-          fish_completion.install "completions/stacksmith.fish"
+          bash_completion.install "build/completions/stacksmith.bash"
+          zsh_completion.install "build/completions/stacksmith.zsh"
+          fish_completion.install "build/completions/stacksmith.fish"
         end
       end
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/mubbie/stacksmith/releases/download/v1.0.0/stacksmith_1.0.0_linux_arm64.tar.gz"
-        sha256 "ca5a14934a7e1b691e4616544a2c49369bc16cd19ac8644a3777f278b8beb060"
+        sha256 "f69884fc97dd992edfd33efb6144d3bf82ddd5f444077b8ee63b216e23d56e4e"
 
         def install
           bin.install "stacksmith"
-          bash_completion.install "completions/stacksmith.bash"
-          zsh_completion.install "completions/stacksmith.zsh"
-          fish_completion.install "completions/stacksmith.fish"
+          bash_completion.install "build/completions/stacksmith.bash"
+          zsh_completion.install "build/completions/stacksmith.zsh"
+          fish_completion.install "build/completions/stacksmith.fish"
         end
       end
     end
