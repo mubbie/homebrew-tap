@@ -11,7 +11,7 @@ class Stacksmith < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/mubbie/stacksmith/releases/download/v1.0.0/stacksmith_1.0.0_darwin_amd64.tar.gz"
-      sha256 "90e7d8025a2eeedb618e7b1fad94568d1e501e00db11919bf516081901585abb"
+      sha256 "aafd54fb5d0b1119a392e4cb846c8fe3177d3e3753b5138cd95acc78261e09da"
 
       def install
         bin.install "stacksmith"
@@ -22,7 +22,7 @@ class Stacksmith < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/mubbie/stacksmith/releases/download/v1.0.0/stacksmith_1.0.0_darwin_arm64.tar.gz"
-      sha256 "7e09fc60bab316ee47b8d6520f946cd80fc6c4148cc21ac6781de8bbc527e836"
+      sha256 "311eeaeb8ded4b32ee6513d97c0dcf95ada07b2194d7229174f4f43e2a27b319"
 
       def install
         bin.install "stacksmith"
@@ -37,7 +37,7 @@ class Stacksmith < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/mubbie/stacksmith/releases/download/v1.0.0/stacksmith_1.0.0_linux_amd64.tar.gz"
-        sha256 "ace9ab9931012c0846129d79bc3b4f439248ac6fbb6e618a8dd2525c19169977"
+        sha256 "4c40c43b06c8b2f1087b1b6716cdab17685216abdbf31dec436f04cf6f823ba1"
 
         def install
           bin.install "stacksmith"
@@ -50,7 +50,7 @@ class Stacksmith < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/mubbie/stacksmith/releases/download/v1.0.0/stacksmith_1.0.0_linux_arm64.tar.gz"
-        sha256 "492c1169cc7d3a6beb3b8794e169eea0f0989596518c995063c97fbea7a2d816"
+        sha256 "041ae889e931b8cfb190a77d8c885c70893d5b9dd5013d1853b099d5c111f63f"
 
         def install
           bin.install "stacksmith"
