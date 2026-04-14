@@ -5,27 +5,23 @@
 class GxGit < Formula
   desc "Git Productivity Toolkit: smart undo, stacking, branch management and more"
   homepage "https://github.com/mubbie/gx-cli"
-  version "1.4.0"
+  version "1.5.0"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/mubbie/gx-cli/releases/download/v1.4.0/gx_1.4.0_darwin_amd64.tar.gz"
-      sha256 "PLACEHOLDER"
-    end
     if Hardware::CPU.arm?
-      url "https://github.com/mubbie/gx-cli/releases/download/v1.4.0/gx_1.4.0_darwin_arm64.tar.gz"
+      url "https://github.com/mubbie/gx-cli/releases/download/v1.5.0/gx_1.5.0_darwin_arm64.tar.gz"
       sha256 "PLACEHOLDER"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mubbie/gx-cli/releases/download/v1.4.0/gx_1.4.0_linux_amd64.tar.gz"
+      url "https://github.com/mubbie/gx-cli/releases/download/v1.5.0/gx_1.5.0_linux_amd64.tar.gz"
       sha256 "PLACEHOLDER"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mubbie/gx-cli/releases/download/v1.4.0/gx_1.4.0_linux_arm64.tar.gz"
+      url "https://github.com/mubbie/gx-cli/releases/download/v1.5.0/gx_1.5.0_linux_arm64.tar.gz"
       sha256 "PLACEHOLDER"
     end
   end
