@@ -5,24 +5,24 @@
 class GxGit < Formula
   desc "Git Productivity Toolkit: smart undo, stacking, branch management and more"
   homepage "https://github.com/mubbie/gx-cli"
-  version "1.5.3"
+  version "1.5.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mubbie/gx-cli/releases/download/v1.5.3/gx_1.5.3_darwin_arm64.tar.gz"
-      sha256 "910930af92bc601f88f9ec4dd07c8b9c9706e54267ae1a8cb573c9de90904c28"
+      url "https://github.com/mubbie/gx-cli/releases/download/v1.5.4/gx_1.5.4_darwin_arm64.tar.gz"
+      sha256 "6b9f1aca0237978bbe147ba268c53601aee7b9ec9abe34b04e533d718da4f540"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mubbie/gx-cli/releases/download/v1.5.3/gx_1.5.3_linux_amd64.tar.gz"
-      sha256 "3dc7b0ea9c71eb270a6a92561cc8458908cefb3d40d39bc0364ddb7238925e0f"
+      url "https://github.com/mubbie/gx-cli/releases/download/v1.5.4/gx_1.5.4_linux_amd64.tar.gz"
+      sha256 "540f1d6c8ffa7255ff7e450b06a99a566009ed14a89a3410cc843c7effc52529"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mubbie/gx-cli/releases/download/v1.5.3/gx_1.5.3_linux_arm64.tar.gz"
-      sha256 "ac037318bae33d4990fac3d75b528a86f034cc732e82aaeea9130f686df3a1d1"
+      url "https://github.com/mubbie/gx-cli/releases/download/v1.5.4/gx_1.5.4_linux_arm64.tar.gz"
+      sha256 "bef15802fb0efe38b2fefdb1e537efe04235cd74bb90a78dff1973475b4c5ab3"
     end
   end
 
