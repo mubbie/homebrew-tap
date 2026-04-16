@@ -5,21 +5,21 @@
 class GxGit < Formula
   desc "Git Productivity Toolkit: smart undo, stacking, branch management and more"
   homepage "https://github.com/mubbie/gx-cli"
-  version "2.4.0"
+  version "2.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mubbie/gx-cli/releases/download/v2.4.0/gx_2.4.0_darwin_amd64.tar.gz"
-      sha256 "8362e1c0a4d6787c9b265c9da1aebec48ac9298cbe72be7f776f03631b6b31cb"
+      url "https://github.com/mubbie/gx-cli/releases/download/v2.4.1/gx_2.4.1_darwin_amd64.tar.gz"
+      sha256 "5e821ea0413d9af9e8061cfdbc5b92dc883f8ae7a6298c4828b83910100556c2"
 
       define_method(:install) do
         bin.install "gx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mubbie/gx-cli/releases/download/v2.4.0/gx_2.4.0_darwin_arm64.tar.gz"
-      sha256 "84a783e268bf44300d1d8e1768c37ebc1db16856ec3c279dcb68a4fdbb0202b0"
+      url "https://github.com/mubbie/gx-cli/releases/download/v2.4.1/gx_2.4.1_darwin_arm64.tar.gz"
+      sha256 "6b11e2bb344b869e93d28282d2c7ceffca4e6460350a77f25ce6cb500647266f"
 
       define_method(:install) do
         bin.install "gx"
@@ -29,15 +29,15 @@ class GxGit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mubbie/gx-cli/releases/download/v2.4.0/gx_2.4.0_linux_amd64.tar.gz"
-      sha256 "a9d984dc300a5f83dd5aa711d6b262550722ed62455ed729682df84272de9cbf"
+      url "https://github.com/mubbie/gx-cli/releases/download/v2.4.1/gx_2.4.1_linux_amd64.tar.gz"
+      sha256 "1c1fefdf225298d26de2d55cc941dc0cdac87a7ccfa43d2241e737e8d577e3d6"
       define_method(:install) do
         bin.install "gx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mubbie/gx-cli/releases/download/v2.4.0/gx_2.4.0_linux_arm64.tar.gz"
-      sha256 "ca3f696ec62ea522dd7b18ed0401fc3945aced1801c5251e20c7e7754ad909f5"
+      url "https://github.com/mubbie/gx-cli/releases/download/v2.4.1/gx_2.4.1_linux_arm64.tar.gz"
+      sha256 "f4fae165868f46cb9ea94b75318bad648a1609af583242374db7e19ec359f6a2"
       define_method(:install) do
         bin.install "gx"
       end
